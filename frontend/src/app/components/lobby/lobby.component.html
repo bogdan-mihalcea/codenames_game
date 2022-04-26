@@ -1,0 +1,112 @@
+<div class="card shadow">
+  <div class="card-header">
+    Bine ai venit pe Codenames!
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title">
+      Cum să începi un joc:
+    </h5>
+
+    <p class="card-text">1. Apasă pe butonul "Crează un joc", sau pe "Alătură-te unui joc", în funcție de caz</p>
+    <p class="card-text">2. Invită-ți cel puțin încă 3 prieteni oferindu-le ID-ul unic al jocului</p>
+    <p class="card-text">3. Începe un apel audio/video (dacă e cazul)</p>
+    <p class="card-text">4. Așteaptă ca toată lumea să fie pregătită.</p>
+    <p class="card-text">5. Bucură-te de joc!</p>
+  
+    <p class="card-text">
+      <button mat-raised-button color="primary" data-bs-toggle="modal" data-bs-target="#createGameModal">Crează un joc</button>
+      sau
+      <button mat-raised-button color="primary" data-bs-toggle="modal" data-bs-target="#joinGameModal">Alătură-te unui joc</button>
+    </p>
+
+  </div>
+
+  
+</div>
+
+<br>
+
+<div class="card shadow">
+  <div class="card-header">
+    Reguli (pentru varianta fizică)
+  </div>
+
+  <div class="card-body">
+    <h5 class="card-title">
+      Cum se joacă:
+    </h5>
+
+    <p class="card-text">
+      Codenames este unul dintre cele mai importante jocuri recent aduse de Lex Games - tradus ca Nume de Cod.  Un joc de deducție cu agenți secreți gândit pentru petreceri.
+    </p>
+    <p class="card-text">
+      Două echipe concurează pentru a vedea care poate să-și contacteze prima toți agenții săi secreți.
+    </p>
+    <p class="card-text">
+      Spymasterii dau indicii (un cuvânt) care să ducă spre cât mai multe cărți de pe masă. Coechipierii trebuie să dezbată și să deducă ce a vrut să spună.
+    </p>
+    <p class="card-text">
+      Coechipierii trebuie să încerce să ghicească numele de cod din echipa lor (albastră sau roșie), evitând să-i nimerească pe agenții echipei oponente, făcându-le deci viața mai ușoară oponenților. Pe deasupra, toată lumea se ferește de asasin - dacă îl nimerești, jocul se termină automat și câștigă cealaltă echipă!
+    </p>
+    <p class="card-text">
+      Cărțile cu nume de cod (cuvinte) se așează într-un tabel 5x5, iar Spymasterii oponenți stau unul lângă altul, vis-a-vis de coechipieri. Cuvintele sunt scrise de două ori, pentru a fi citite din ambele părți ale mesei. Cei doi spymasteri au în fața lor o carte cheie, pe care este ilustrată o hartă a locațiilor fiecărui agent, inocent și asasin. Da, există și câțiva inocenți, pe care dacă-i nimerești, se termină tura și nu poți să mai încerci să folosești indiciul primit pentru a ghici mai mulți agenți.
+    </p>
+    <p class="card-text">
+      Se recomandă să fie jucat în 6 sau 8 jucători dar te poți distra și în 4. O partidă durează în general 15 minute, așa că îți poți găsi oricând timp de măcar o sesiune de Codenames. Fie că pierzi sau câștigi, în orice situație este distractiv să încerci să te prinzi de indicii sau să le dai chiar tu.
+    </p>
+
+  </div>
+
+  
+</div>
+
+
+<!-- Create game-->
+<div class="modal fade" id="createGameModal" tabindex="-1" aria-labelledby="createGameModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="createGameModal">Crează un joc nou</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Nume:</mat-label>
+          <input matInput id="playerName">
+        </mat-form-field>
+      </div>
+      <div class="modal-footer">
+        <button mat-raised-button color="primary" data-bs-dismiss="modal" (click)="createGame()">Crează joc</button>
+        <button type="button" class="mat-raised-button" data-bs-dismiss="modal">Închide</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Join game-->
+<div class="modal fade" id="joinGameModal" tabindex="-1" aria-labelledby="joinGameModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="joinGameModal">Alătură-te unui joc</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Nume:</mat-label>
+          <input matInput id="playerNameJoinGame">
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>ID Unic Joc:</mat-label>
+          <input matInput id="uuid">
+        </mat-form-field>
+      </div>
+      <div class="modal-footer">
+        <button mat-raised-button color="primary" data-bs-dismiss="modal" (click)="joinGame()">Alătură-te</button>
+        <button type="button" class="mat-raised-button" data-bs-dismiss="modal">Închide</button>
+      </div>
+    </div>
+  </div>
+</div>
