@@ -22,17 +22,9 @@ The idea of this project came up after several experiences which included silly 
 - Frontend: Angular
 - Backend: Node.JS with Express, Socket.io
 
-<!--
-## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
--->
 
 ## Screenshots
-![Example screenshot](./screenshots/game.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+![Game board](./screenshots/game.png)
 
 
 ## Setup
