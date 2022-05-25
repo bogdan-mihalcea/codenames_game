@@ -16,11 +16,6 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-
 The idea of this project came up after several experiences which included silly but real problems regarding a real-life board game, all the way from losing crucial pieces of the game (think pawns for example), which were needed to be able to play the game, as well as discussions of the actual rules. My solution to this problem was to develop an online game which would solve all those problems.
 
 
@@ -53,10 +48,13 @@ Then use the generated files with your preferred web server.
 Backend deployment:
 
 `npm install`
+
 `npm ci --only=production`
+
 `node index.js`
 
-A docker version of the backend can be found [here](https://hub.docker.com/r/bogdanmihalcea/codenames)
+A docker version of the backend can be found [here](https://hub.docker.com/r/bogdanmihalcea/codenames) .
+
 The dockerfile is included in he backend folder.
 
 
