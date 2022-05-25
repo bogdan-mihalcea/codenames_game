@@ -5,7 +5,6 @@
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-<!--* [Features](#features)-->
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Usage](#usage)
@@ -67,8 +66,6 @@ Project is: _complete_ & _no longer being worked on_.
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
 Room for improvement:
 - A lot of the code could be cleaned and restructured into fewer lines and made easier to understand.
 - Game could be improved so that the server could choose the team & role for each player to give some variety.
